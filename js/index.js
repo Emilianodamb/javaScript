@@ -58,8 +58,8 @@ while (menu != 0) {
         dateService = prompt("Ingrese la fecha del arrelgo en el siguiente formato: DD/MM/AAAA");
         kmNum = Number(prompt("Indique el kilometraje al momento del arreglo"));
         lastService = kmNum;
-        console.log("Arreglo añadido exitosamente por " + userName + " DNI Nº" + userId + ":");
         console.log(`${description}, a los ${kmNum} km, el día ${dateService}.`);
+        console.log("Arreglo añadido exitosamente por " + userName + " DNI Nº" + userId + ":");
         alert("¡Arreglo cargado exitosamente!")
       }
       break;
@@ -83,9 +83,8 @@ while (menu != 0) {
       console.log("La opción no es válida, debes ingresar una opción válida");
       break;
   };
-
-  console.log("¡Muchas gracias por usar nuestra plataforma, hasta la próxima!");
-  
 }
+
+console.log("¡Muchas gracias por usar nuestra plataforma, hasta la próxima!");
 
 
