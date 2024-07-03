@@ -40,6 +40,7 @@ function generarPresupuesto() {
   }
 
   console.log(`Total = $${total.toFixed(2)}`);
+  console.log("\n*Los precios de cada artículo son unitarios y no incluyen impuestos")
   alert("¡Presupuesto generado de forma exitosa!")
 }
 
