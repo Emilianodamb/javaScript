@@ -1,280 +1,262 @@
-//Definicion de clases y sus metodos
 class Articulo {
-  constructor(nombre, id, stock, precio) {
+  constructor(nombre, id, stock, precio, categorias) {
     this.nombre = nombre;
     this.id = id;
     this.stock = parseInt(stock, 10);
     this.precio = parseFloat(precio);
+    this.categorias = categorias;
   }
 }
 
-class Inventario {
-  constructor() {
-    this.articulos = [];
-  }
+// INICIALIZA LAS CATEGORÍAS PREDEFINIDAS
+const categorias = [
+  "Herramientas Manuales",
+  "Herramientas Eléctricas",
+  "Materiales de Construcción",
+  "Carpintería",
+  "Pinturas y Accesorios",
+  "Ferretería General",
+  "Electricidad",
+  "Sanitarios",
+  "Jardinería",
+  "Seguridad",
+  "Adhesivos y Selladores",
+  "Hogar y Organización",
+];
 
-  agregarArticulo(articulo) {
-    this.articulos.push(articulo);
-  }
+// INICIALIZA EL INVENTARIO
+const inventario = [
+  {
+    nombre: "Maza",
+    id: "1123",
+    stock: 200,
+    precio: 255.99,
+    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Sierra",
+    id: "121",
+    stock: 300,
+    precio: 200.49,
+    categorias: [
+      "Herramientas Manuales",
+      "Materiales de Construcción",
+      "Carpintería",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Martillo",
+    id: "3163",
+    stock: 250,
+    precio: 1500,
+    categorias: [
+      "Herramientas Manuales",
+      "Materiales de Construcción",
+      "Carpintería",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Clavos",
+    id: "443",
+    stock: 15000,
+    precio: 4.47,
+    categorias: [
+      "Herramientas Manuales",
+      "Materiales de Construcción",
+      "Carpintería",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Madera",
+    id: "1023",
+    stock: 290,
+    precio: 255.99,
+    categorias: [
+      "Herramientas Manuales",
+      "Materiales de Construcción",
+      "Carpintería",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Hacha",
+    id: "25",
+    stock: 500,
+    precio: 564,
+    categorias: [
+      "Pinturas y Accesorios",
+      "Ferretería General",
+      "Electricidad",
+      "Sanitarios",
+      "Jardinería",
+      "Seguridad",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Veneno",
+    id: "355",
+    stock: 126,
+    precio: 255.99,
+    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Amoniaco",
+    id: "265",
+    stock: 458,
+    precio: 200.49,
+    categorias: [
+      "Pinturas y Accesorios",
+      "Ferretería General",
+      "Electricidad",
+      "Sanitarios",
+      "Jardinería",
+      "Seguridad",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Serrucho",
+    id: "126",
+    stock: 556,
+    precio: 1500,
+    categorias: ["Herramientas Manuales", "Carpinteria"],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Caño 1'",
+    id: "9854",
+    stock: 3000,
+    precio: 4.47,
+    categorias: [
+      "Ferretería General",
+      "Materiales de Construcción",
+      "Sanitarios",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Maderita",
+    id: "963",
+    stock: 12,
+    precio: 22.59,
+    categorias: [
+      "Ferretería General",
+      "Jardinería",
+      "Materiales de Construcción",
+    ],
+    imagen: "https://via.placeholder.com/100",
+  },
+  {
+    nombre: "Virulana",
+    id: "77",
+    stock: 123,
+    precio: 129.5,
+    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
+    imagen: "https://via.placeholder.com/100",
+  },
+];
 
-  modificarArticulo(nombre) {
-    let articulo = this.articulos.find((a) => a.nombre === nombre);
-    if (articulo) {
-      console.log("Modificando artículo:", articulo);
-      articulo.nombre = prompt(
-        `Ingrese el nuevo nombre del artículo (anterior: ${articulo.nombre}):`,
-        articulo.nombre
-      );
-      articulo.id = prompt(
-        `Ingrese el nuevo ID del artículo (anterior: ${articulo.id}):`,
-        articulo.id
-      );
-      articulo.stock = parseInt(
-        prompt(
-          `Ingrese el nuevo stock del artículo (anterior: ${articulo.stock}):`,
-          articulo.stock
-        ),
-        10
-      );
-      articulo.precio = parseFloat(
-        prompt(
-          `Ingrese el nuevo precio del artículo (anterior: ${articulo.precio}):`,
-          articulo.precio
-        )
-      );
-      console.log("Artículo modificado:", articulo);
-    } else {
-      console.log("Artículo no encontrado.");
-    }
+function completarConCeros(numero, tam) {
+  let string = String(numero);
+  while (string.length < tam) {
+    string = "0" + string;
   }
-
-  eliminarArticulo(nombre) {
-    let index = this.articulos.findIndex((a) => a.nombre === nombre);
-    if (index !== -1) {
-      let eliminado = this.articulos.splice(index, 1);
-      console.log("Artículo eliminado:", eliminado[0]);
-    } else {
-      console.log("Artículo no encontrado.");
-    }
-  }
-
-  mostrarInventario() {
-    if (this.articulos.length > 0) {
-      console.log("-------------------------");
-      console.log("-------Inventario:-------");
-      this.articulos.forEach((articulo) => {
-        console.log(
-          `ID: ${articulo.id}, Nombre: ${articulo.nombre}, Stock: ${
-            articulo.stock
-          }, Precio: ${formatearPrecioARS(articulo.precio)}`
-        );
-      });
-    } else {
-      console.log("El inventario está vacío.");
-    }
-  }
+  return string;
 }
 
-class Presupuesto {
-  constructor() {
-    this.articulos = [];
-    this.cliente = "";
-  }
-
-  setCliente(nombre) {
-    this.cliente = nombre;
-  }
-
-  agregarArticuloPresupuesto(inventario) {
-    let nombre = prompt(
-      "Ingrese el nombre del artículo a agregar al presupuesto:\n" +
-        inventario.articulos.map((a) => a.nombre).join(", ")
-    );
-    let articulo = inventario.articulos.find((a) => a.nombre === nombre);
-    if (articulo) {
-      let cantidad = parseInt(
-        prompt(
-          `Ingrese la cantidad de unidades del artículo (disponible: ${articulo.stock}):`
-        ),
-        10
-      );
-      if (cantidad > 0 && cantidad <= articulo.stock) {
-        this.articulos.push({ articulo, cantidad });
-        console.log(
-          `Artículo agregado al presupuesto: ${articulo.nombre}, Cantidad: ${cantidad}`
-        );
-      } else {
-        console.log("Cantidad no disponible en stock.");
-      }
-    } else {
-      console.log("Artículo no encontrado en el inventario.");
-    }
-  }
-
-  eliminarArticuloPresupuesto() {
-    let nombre = prompt(
-      "Ingrese el nombre del artículo a eliminar del presupuesto:\n" +
-        this.articulos.map((p) => p.articulo.nombre).join(", ")
-    );
-    let index = this.articulos.findIndex((p) => p.articulo.nombre === nombre);
-    if (index !== -1) {
-      let eliminado = this.articulos.splice(index, 1);
-      console.log("Artículo eliminado del presupuesto:", eliminado[0].articulo);
-    } else {
-      console.log("Artículo no encontrado en el presupuesto.");
-    }
-  }
-
-  mostrarPresupuesto() {
-    if (this.articulos.length > 0) {
-      console.log(`----------------`);
-      console.log(`PRESUPUESTO PARA: ${this.cliente}`);
-      let total = 0;
-      this.articulos.forEach((p) => {
-        console.log(
-          `Nombre: ${p.articulo.nombre}, Cantidad: ${
-            p.cantidad
-          }, Precio Unitario: ${formatearPrecioARS(
-            p.articulo.precio
-          )}.-, Subtotal: ${formatearPrecioARS(p.cantidad * p.articulo.precio)}`
-        );
-        total += p.cantidad * p.articulo.precio;
-      });
-      console.log("Total del presupuesto:", formatearPrecioARS(total));
-    } else {
-      console.log("El presupuesto está vacío.");
-    }
-  }
-
-  confirmarPresupuesto(inventario) {
-    if (this.articulos.length > 0) {
-      console.log("Presupuesto confirmado:");
-      this.mostrarPresupuesto();
-      this.articulos.forEach((p) => {
-        let articulo = inventario.articulos.find(
-          (a) => a.nombre === p.articulo.nombre
-        );
-        if (articulo) {
-          articulo.stock -= p.cantidad;
-        }
-      });
-      this.articulos = [];
-    } else {
-      console.log("El presupuesto está vacío.");
-    }
-  }
-}
-
-//Funciones de menúes
-function menuPrincipal(inventario, presupuesto) {
-  let opcion = prompt(
-    "\nMenú Principal\n\n1. Inventario\n2. Presupuesto\n3. Salir"
-  );
-  switch (opcion) {
-    case "1":
-      menuInventario(inventario);
-      break;
-    case "2":
-      let cliente = prompt("Ingrese el nombre del cliente:");
-      presupuesto.setCliente(cliente);
-      menuPresupuesto(inventario, presupuesto);
-      break;
-    case "3":
-      console.log("Saliendo del programa");
-      return;
-    default:
-      console.log("La opción no es válida");
-      menuPrincipal(inventario, presupuesto);
-  }
-}
-
-function menuInventario(inventario) {
-  let opcion = prompt(
-    "\nMenú Inventario\n\n1. Agregar artículo\n2. Modificar artículo\n3. Eliminar artículo\n4. Mostrar inventario\n5. Volver al menú principal"
-  );
-  let nombre;
-  let id;
-  let stock;
-  let precio;
-
-  switch (opcion) {
-    case "1":
-      nombre = prompt("Ingrese el nombre del artículo:");
-      id = prompt("Ingrese el ID del artículo:");
-      stock = prompt("Ingrese el stock del artículo:");
-      precio = prompt("Ingrese el precio del artículo:");
-      let articulo = new Articulo(nombre, id, stock, parseFloat(precio));
-      inventario.agregarArticulo(articulo);
-      console.log("Artículo agregado:", articulo);
-      break;
-    case "2":
-      nombre = prompt(
-        "Ingrese el nombre del artículo a modificar:\n" +
-          inventario.articulos.map((a) => a.nombre).join(", ")
-      );
-      inventario.modificarArticulo(nombre);
-      break;
-    case "3":
-      nombre = prompt(
-        "Ingrese el nombre del artículo a eliminar:\n" +
-          inventario.articulos.map((a) => a.nombre).join(", ")
-      );
-      inventario.eliminarArticulo(nombre);
-      break;
-    case "4":
-      inventario.mostrarInventario();
-      break;
-    case "5":
-      menuPrincipal(inventario, presupuesto);
-      return;
-    default:
-      console.log("La opción no es válida");
-  }
-  menuInventario(inventario);
-}
-
-function menuPresupuesto(inventario, presupuesto) {
-  let opcion = prompt(
-    "\nMenú Presupuesto\n\n1. Agregar artículo\n2. Eliminar artículo\n3. Mostrar presupuesto\n4. Confirmar presupuesto\n5. Volver al menú principal"
-  );
-  switch (opcion) {
-    case "1":
-      presupuesto.agregarArticuloPresupuesto(inventario);
-      break;
-    case "2":
-      presupuesto.eliminarArticuloPresupuesto();
-      break;
-    case "3":
-      presupuesto.mostrarPresupuesto();
-      break;
-    case "4":
-      console.log("-------------------");
-      presupuesto.confirmarPresupuesto(inventario);
-      break;
-    case "5":
-      menuPrincipal(inventario, presupuesto);
-      return;
-    default:
-      console.log("La opción no es válida");
-  }
-  menuPresupuesto(inventario, presupuesto);
-}
-
-//Funcion para embellecer los precios
+//FORMATEA UN PRECIO A PESOS ARGENTINOS
+//FUNCION// RECIBE UN NUMERO Y DEVUELVE UN STRING CON EL NUMERO FORMATEADO
 function formatearPrecioARS(precio) {
   return precio.toLocaleString("es-AR", { style: "currency", currency: "ARS" });
 }
 
-//Inicializar inventario y presupuesto
-let inventario = new Inventario();
-let presupuesto = new Presupuesto();
+//PROCEDIMIENTO// RECIBE UN ARRAY DE OBJETOS Y LO ORDENA DE FORMA CRECIENTE POR EL VALOR DE SU PROPIEDAD "ID"
+function ordenarArray(array) {
+  array.sort((a, b) => a.id - b.id);
+}
 
-//Artículos preexistentes en el inventario
-inventario.agregarArticulo(new Articulo("Maza", "01123", 200, 255.99));
-inventario.agregarArticulo(new Articulo("Sierra", "01121", 300, 200.49));
-inventario.agregarArticulo(new Articulo("Martillo", "31163", 250, 1500));
-inventario.agregarArticulo(new Articulo("Clavos", "44443", 20000, 4.47));
-inventario.agregarArticulo(new Articulo("Madera", "10293", 200, 255.99));
+/////////////////////////////////
+/////////////////////////////////
+/////////////////////////////////
 
-//Ejecutar el programa
-menuPrincipal(inventario, presupuesto);
+let carrito = JSON.parse(localStorage.getItem("carrito")) || []
+
+const renderProducts = (arrayArticulos) => {
+  let articulosContainer = document.getElementById("articulos-container");
+  articulosContainer.innerHTML = "";
+
+  // Renderizar
+
+  arrayArticulos.forEach((articulo) => {
+    let productCard = document.createElement("div");
+    productCard.className = "articulo";
+    productCard.innerHTML = `
+        <img src="${articulo.imagen}"/>
+        <h4>${articulo.nombre}</h4>
+        <p>ID: ${articulo.id}</p>
+        <b>${formatearPrecioARS(articulo.precio)}</b>
+        <p>Stock: ${articulo.stock}</p>
+        <button onclick="agregarAlCarrito('${
+          articulo.id
+        }')">Agregar al carrito</button>`;
+    articulosContainer.appendChild(productCard);
+  });
+};
+
+renderProducts(inventario);
+
+const agregarAlCarrito = (id) => {
+  let articulo = inventario.find((elemento) => elemento.id === id);
+  if (articulo) {
+    carrito.push(articulo);
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+  } else {
+    console.error("Artículo no encontrado");
+  }
+};
+
+function mostrarCategoriasMenu(categorias) {
+  const menuCategorias = document.getElementById("categorias-list");
+  menuCategorias.innerHTML = "";
+
+  categorias.forEach((categoria) => {
+    let li = document.createElement("div");
+    li.innerHTML = `<li class="categorias"><a href="#ancla">${categoria}</a></li>`;
+    li.addEventListener("click", () => {
+      filtrarProductosPorCategoria(categoria);
+    });
+
+    menuCategorias.appendChild(li);
+  });
+}
+
+function filtrarProductosPorCategoria(categoria) {
+  const productosFiltrados = inventario.filter((articulo) =>
+    articulo.categorias.includes(categoria)
+  );
+  renderProducts(productosFiltrados);
+}
+
+mostrarCategoriasMenu(categorias);
+
+const inputBuscador = document.getElementById("buscador");
+
+if (inputBuscador) {
+  inputBuscador.addEventListener("input", (evento) => {
+    let value = evento.target.value.toLowerCase();
+    let arrayFiltrado = inventario.filter((articulo) =>
+      articulo.nombre.toLowerCase().includes(value)
+    );
+    renderProducts(arrayFiltrado);
+  });
+}
+
+
+
+

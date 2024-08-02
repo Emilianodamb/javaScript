@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #f2f4f7;
+}
+header{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 55px;
+}
+nav{
+    padding: 0 3% 0 3%;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+.buscador-container{
+    align-self: center;
+}
+#img-logo{
+    height: 50px;
+}
+
+
+.banner{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+#articulos-container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer{
+    background-color: #333333;
+}
+.articulo{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    color: #FFFEFA;
+    background-color: #8F857D;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+}
+
+h1{
+    font-weight: bolder;
+    color: rgb(105, 167, 13);
+}
+
+/*
+h2{
+    font-weight: bolder;
+    color: #FF5733;
+}
+h3{
+    font-weight: bolder;
+    color: #FF5733;
+}
+p{
+    font-weight: bolder;
+    color: #FF5733;
+}*/
+/*
+body nav ul li a{
+    color: #333333;
+    text-decoration: none;
+}
+body nav ul li a :visited{
+    color: #333333;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+#img-logo{
+    width: 150px;
+    padding: 1%;
+}
+
+li{
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style-type: none;
+}
+li a{
+    font-weight: 600;
+}
+.funcionalidades{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+    padding: 5%;
+}
+.categorias{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.button{
+    border-radius: 15px;
+    border: 0px;
+    color: #FFFEFA;
+    background-color: #ff5833;
+}
+.button:hover {
+    background-color: #cb4426;
+}
+
+.articulo button{
+    width: 50%;
+    margin: 10px auto 5px auto;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: #8F857D 0px 3px;
+}
+
+#clientSection, #adminSection {
+    padding: 20px;
+    border: 1px solid #FFFEFA;
+    border-radius: 5px;
+} 
+#clientSection h2, #adminSection h2 {
+    margin-top: 0;
+}
+.contenedor-prueba-visualizacion{
+    background-color: rgb(218, 153, 75);
+    width: 100%;
+    height: 100%;
+}
+.lista-articulos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.8rem;
+    list-style-type: none;
+    width: 100%;
+    
+}
+table{
+    width: 100%;
+}
+table tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    width: 100%;
+}
+table tr th{
+    display: flex;
+    width: 4rem;
+    margin: 5px;
+    align-self: center;
+    justify-content: start;
+}
+.lista-articulos td{
+    display: flex;
+    width: 4rem;
+    margin: 5px;
+    align-self: center;
+    justify-content: start;
+}
+.btn-modificar-articulo{
+    justify-self: flex-end;
+    font-size: auto;
+    margin: 1%;
+    padding: 1%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 15px 20px;
+    border: 1px solid #888;
+    width: fit-content;
+    border-radius: 10px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabla{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#categorias-list{
+    overflow: auto;
+}
+
+#container-cart{
+    display: flex;
+}
+
+
+*/
+
+
+
+
+
+
+
+/*///////////////////////////////*/
+/* Cambia el color del scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Ancho del scrollbar vertical */
+  height: 12px; /* Alto del scrollbar horizontal */
+}
+
+/* Cambia el color del track del scrollbar */
+::-webkit-scrollbar-track {
+    background: #f7f7f700;
+  }
+  
+  /* Cambia el color del thumb (la parte que se mueve) del scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: #00000061;
+    border-radius: 10px; /* Añade bordes redondeados al thumb */
+  }
+  
+  /* Cambia el color del thumb cuando se está haciendo hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00000098;
+  }
+
+/* Cambia el color del corner del scrollbar (la esquina donde se encuentran los scrollbars horizontal y vertical) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+/*///////////////////////////*/
+
