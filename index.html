@@ -7,8 +7,8 @@
     <title>Ferretería Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./img/favicon-fo.ico">
 </head>
@@ -16,11 +16,12 @@
 <body class="container">
     <header>
         <nav>
-            <div class="logo-container">
-                <a href="#"><img src="./img/LOGO-FO-AZUL.svg" alt="logo" id="img-logo" class="m-auto"></a>
-            </div>
-            <div class="buscador-container">
-                <input type="text" placeholder="Buscar producto..." id="buscador">
+            <a href="#" class="link-logo"><img src="./img/LOGO-FO-AMARILLO-4.svg" alt="logo" id="img-logo" class="m-auto"></a>
+            
+            
+            <div class="botones-container">
+                <button id="admin">INVENTARIO</button>
+                <a href="./carrito.html"><button id="carrito">CARRITO</button></a>
             </div>
         </nav>
          
@@ -28,29 +29,36 @@
     </header>
     
     <main>
-        <div class="banner">
-            <h1>Ahorrá tiempo y dinero</h1>
-            <h2>Hacé ya mismo tu pedido y recibilo en el día</h2>
-            <p>Amplia variedad de materiales, la mejor calidad al mejor precio</p>
+        <div class="banner animate__animated animate__backInLeft">
+            <h1>¡AHORRÁ TIEMPO Y DINERO!</h1>
+            <h2>ENVÍOS EN EL DÍA</h2>
         </div>
-        <div id="articulos-container">
-            
+        
+        <div>
+            <div class="barra-filtros">
+                <div class="buscador-container">
+                    <input type="text" placeholder="Buscar producto..." id="buscador">
+                </div>
+                <p>Desplegable Categorías</p>
+            </div>
+
+            <div id="articulos-container">
+                
+            </div>
         </div>
     </main>
     <footer>
         <h3>ESTO ES EL FOOTER</h3>
     </footer>
 
-    <div>
-        <button id="admin">INVENTARIO</button>
-        <a href="./carrito.html"><button id="carrito">CARRITO</button></a>
-    </div>   
+     
     <div>
         <h4 id="ancla">Categorías</h4>
         <ul class="categorias" id="categorias-list">
 
         </ul>
     </div>
+
 
     
 
