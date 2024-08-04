@@ -31,13 +31,9 @@ nav{
 }
 
 
-.buscador-container{
-    align-self: center;
-    
-}
+
 
 #buscador{
-    height: 3em;
     color: #000000;
     border-radius: 0.4em;
     padding-left: 0.4em;
@@ -52,12 +48,12 @@ nav{
 
 
 
-
 .banner{
     width: 100%;
     padding: 2%;
     text-align: center;
 }
+
 
 .barra-filtros{
     display: flex;
@@ -68,7 +64,9 @@ nav{
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0 0.1em;
+    align-items: baseline;
 }
+
 #articulos-container{
     height: fit-content;
     display: flex;
@@ -102,25 +100,33 @@ h1{
     font-size: 3rem;
     font-weight: bolder;
     color: rgb(105, 167, 13);
+    text-shadow: black 1.5px 1.5px;
 }
-
-/*
 h2{
     font-weight: bolder;
-    color: #FF5733;
 }
 h3{
     font-weight: bolder;
-    color: #FF5733;
 }
 p{
-    font-weight: bolder;
-    color: #FF5733;
-}*/
+    margin:0;
+}
+
+
+
+
 
 
 #container-cart{
     display: flex;
+}
+
+.container-buttons-cart{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
 }
 
 

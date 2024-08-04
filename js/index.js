@@ -225,12 +225,15 @@ renderProducts(inventario);
 
 const agregarAlCarrito = (id) => {
   let articulo = inventario.find((elemento) => elemento.id === id);
-  if (articulo) {
-    carrito.push(articulo);
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-  } else {
-    console.error("Artículo no encontrado");
+  let articuloEnElCarrito = carrito.find(elemento => elemento.id === id) 
+
+  if (articuloEnElCarrito) {
+    articuloEnElCarrito.quantity += 1
+  }else{
+    carrito.push({...articulo, quantity: 1 });
+    
   }
+  localStorage.setItem("carrito", JSON.stringify(carrito))
 };
 
 function mostrarCategoriasMenu(categorias) {
