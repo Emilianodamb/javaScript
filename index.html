@@ -21,12 +21,10 @@
             
             
             <div class="botones-container">
-                <button id="admin">INVENTARIO</button>
-                <a href="./carrito.html"><button id="carrito">CARRITO</button></a>
+                <button id="admin"><img src="./img/GEAR-LOGO.svg" alt="ajustes" id="ajustes"></button>
+                <a href="./carrito.html"><button id="carrito"><img src="./img/CART-LOGO.svg" alt="carrito" id="carrito-button-img"></button></a>
             </div>
         </nav>
-         
-        
     </header>
     
     <main>
@@ -40,7 +38,14 @@
                 <div class="buscador-container">
                     <input type="text" placeholder="Buscar producto..." id="buscador">
                 </div>
-                <p>Desplegable Categorías</p>
+                <div class="btn-group">
+                    <button id="boton-categorias" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Categorías</button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" id="categorias-list">
+
+                    </ul>
+                </div>
+
+
             </div>
 
             <div id="articulos-container">
@@ -49,16 +54,8 @@
         </div>
     </main>
     <footer>
-        <h3>ESTO ES EL FOOTER</h3>
+        <h4>Esto es un footer</h4>
     </footer>
-
-     
-    <div>
-        <h4 id="ancla">Categorías</h4>
-        <ul class="categorias" id="categorias-list">
-
-        </ul>
-    </div>
 
 
     

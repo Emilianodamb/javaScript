@@ -11,6 +11,7 @@ body{
     padding: 0;
 }
 header{
+    width: 100%;
     background: linear-gradient(0deg, #f2f4f700 41%, #d5d5d55c 100%);
     padding: 15px 3%;
     display: flex;
@@ -25,11 +26,18 @@ nav{
     justify-content: space-between;
     display: flex;
     width: 100%;
+    align-items: baseline;
 }
 #img-logo{
-    height: 50px;
+    height: 5em;
 }
 
+#ajustes{
+    width: 2em;
+}
+#carrito-button-img{
+    width: 2em;
+}
 
 
 
@@ -38,7 +46,8 @@ nav{
     border-radius: 0.4em;
     padding-left: 0.4em;
     background-color: rgba(255, 255, 255, 0.931);
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 1.2em;
 }
 #buscador:hover{
     transform: translateY(-5%);
@@ -58,8 +67,9 @@ nav{
 .barra-filtros{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 2.5%;
-    margin: 0 10% 20px;
+    margin: 2%;
     background-color: #fbca1f;
     border: 3px solid black;
     border-radius: 0.4em;
@@ -68,11 +78,12 @@ nav{
 }
 
 #articulos-container{
+    margin: 2em;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 2em;
 }
 .categoria-vacia-container{
     display: flex;
@@ -80,21 +91,9 @@ nav{
     min-height: 70vh;
 }
 footer{
+    color: white;
     background-color: #333333;
 }
-
-/*
-.articulo{
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    color: #FFFEFA;
-    background-color: #8F857D;
-    border-radius: 3px;
-    margin: 10px;
-    padding: 10px;
-    width: 180px;
-}*/
 
 h1{
     font-size: 3rem;
@@ -118,7 +117,47 @@ p{
 
 
 #container-cart{
+    width: 100%;
+    margin: 2em;
+    height: fit-content;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+.articulo-carrito{
+    display: flex;
+    width: 100%;
+}
+.card-carrito{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: .8em;
+    background: #f5f5f5;
+    border-radius: 3px;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card-header-carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.card-img-carrito{
+    height: 100%;
+    border-radius: 6px;
+}
+.card-info-carrito{
+    display: flex;
+    flex-direction: column;
+}
+.card-footer-carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .container-buttons-cart{
@@ -128,8 +167,6 @@ p{
     justify-content: center;
     gap: 10px;
 }
-
-
 
 
 
@@ -174,20 +211,17 @@ p{
 
 /*///////////////////////////*/
 
-/* From Uiverse.io by alexruix */ 
     .card {
     width: fit-content;
     height: fit-content;
     padding: .8em;
     background: #f5f5f5;
-    position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
    }
    
    .card-img {
     background-color: #ffcaa6;
-    height: 40%;
     width: 100%;
     border-radius: .5rem;
     transition: .3s ease;
@@ -247,7 +281,7 @@ p{
    
 
 
-   /*ssssssssss*/
+
 
 html{
     background-color: #ffffff;
@@ -271,5 +305,83 @@ button:hover {
 button:active {
     transform: translate(0, 0.05em);
     box-shadow: 0 0.05em;
+}
+
+
+
+
+
+.categorias{
+    width: 100%;
+    padding: 0.2em;
+    margin: 0.2em;
+}
+#categorias-list{
+    margin-top: 5px;
+    background: #fbcb1f46;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 0.9rem;
+    border-radius: 0.4em;
+    box-shadow: 0 0.1em;
+    cursor: pointer;
+}
+
+#categorias-list div{
+    width: fit-content;
+}
+.categorias a{
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+}
+.categorias a:visited{
+    color: #000000;
+}
+
+#boton-categorias{
+    background: #fbca1f;
+    color: black;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 0.9rem;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0 0.1em;
+    cursor: pointer;
+}
+
+
+
+
+/*Para pantallas menores a 480px width*/
+@media screen and (max-width: 480px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+    }
+    .barra-filtros{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botones-container{
+        padding: 10px;
+    }
+    #buscador{
+        width: 100%;
+        font-size: large;
+    }
+    #boton-categorias{
+        margin: 0.5em;
+    }
 }
 
