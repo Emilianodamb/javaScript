@@ -57,6 +57,12 @@ const renderProducts = (arrayArticulos) => {
                     <p>ID: ${articulo.id}</p>
                     <p>Stock: ${articulo.stock}</p>
                 </div>
+                <div class="articulo-subtotal">
+                    <p></p>
+                    
+                    <h3 class="text-body">Sub-Total:</h3>
+                    <p>${formatearPrecioARS(articulo.quantity*articulo.precio)}</p>
+                </div>
                 <div class="card-footer-carrito">
                     <span class="text-title">${formatearPrecioARS(articulo.precio)}</span>
                     <div class="container-buttons-cart">
@@ -64,21 +70,23 @@ const renderProducts = (arrayArticulos) => {
                         <p>${articulo.quantity}</p>
                         <button onclick="sumarCantidad('${articulo.id}')">+</button>
                     </div>
-                    <button onclick="eliminarDelCarrito('${articulo.id}')">Eliminar del carrito</button>
+                    <button onclick="eliminarDelCarrito('${articulo.id}')">
+                        <img src="./img/TRASH-LOGO.svg" alt="eliminar" class="trash-logo">
+                    </button>
                 </div>
             </div>`;
-      articulosContainer.appendChild(productCard);
+        articulosContainer.appendChild(productCard);
     });
-  };
-
-
+};
 
 renderProducts(carrito);
+
 
 const eliminarDelCarrito = (id) => {
     carrito = carrito.filter((articulo) => articulo.id !== id);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     renderProducts(carrito);
+    renderTotal(carrito);
 };
 
 const restarCantidad = (id) => {
@@ -92,7 +100,6 @@ const restarCantidad = (id) => {
                 duration: 3000,
                 position: "right",
                 close: true,
-                backgroundColor: "red",
                 stopOnFocus: true
             }).showToast()
         } else {
@@ -101,6 +108,7 @@ const restarCantidad = (id) => {
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
     renderProducts(carrito);
+    renderTotal(carrito);
 };
 
 const sumarCantidad = (id) => {
@@ -110,4 +118,48 @@ const sumarCantidad = (id) => {
     }
     localStorage.setItem("carrito", JSON.stringify(carrito));
     renderProducts(carrito);
+    renderTotal(carrito);
 };
+
+const renderTotal = (arrayArticulos) => {
+    let totalContainer = document.getElementById("container-total");
+    let total = 0;
+    
+    totalContainer.innerHTML = "";
+
+    let table = document.createElement("table");
+    table.className = "articulos-total";
+    let tableHeader = `
+        <tr>
+            <th>Nombre</th>
+            <th>ID</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+        </tr>
+    `;
+    table.innerHTML = tableHeader;
+
+    arrayArticulos.forEach((articulo) => {
+        let subtotal = articulo.quantity * articulo.precio;
+        total += subtotal;
+        
+        let row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${articulo.nombre}</td>
+            <td>${articulo.id}</td>
+            <td>${formatearPrecioARS(articulo.precio)}</td>
+            <td>${articulo.quantity}</td>
+            <td>${formatearPrecioARS(subtotal)}</td>
+        `;
+        table.appendChild(row);
+    });
+
+    totalContainer.appendChild(table);
+
+    let totalElement = document.createElement("h3");
+    totalElement.innerHTML = `TOTAL: ${formatearPrecioARS(total)} <button id="confirmar">Confirmar compra</button>`;
+    totalContainer.appendChild(totalElement);
+}
+
+renderTotal(carrito);
