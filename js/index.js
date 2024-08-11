@@ -241,7 +241,7 @@ function mostrarCategoriasMenu(categorias) {
 
   categorias.forEach((categoria) => {
     let li = document.createElement("li");
-    li.innerHTML = `<button class="categorias"><a href="#ancla">${categoria}</a></button>`;
+    li.innerHTML = `<button class="boton-personalizado categorias"><a href="#ancla">${categoria}</a></button>`;
     li.addEventListener("click", () => {
       filtrarProductosPorCategoria(categoria);
     });

@@ -14,24 +14,52 @@
     <link rel="icon" href="./img/favicon-fo.ico">
 </head>
 
-<body class="container">
+<body class="container-fluid index">
     <header>
         <nav>
             <a href="#" class="link-logo"><img src="./img/LOGO-FO-AMARILLO-6.svg" alt="logo" id="img-logo" class="m-auto"></a>
             
             
             <div class="botones-container">
-                <button id="admin"><img src="./img/GEAR-LOGO.svg" alt="ajustes" id="ajustes"></button>
-                <a href="./carrito.html"><button id="carrito"><img src="./img/CART-LOGO.svg" alt="carrito" id="carrito-button-img"></button></a>
+                <button id="admin" class="boton-personalizado"><img src="./img/GEAR-LOGO.svg" alt="ajustes" id="ajustes"></button>
+                <a href="./carrito.html"><button id="carrito" class="boton-personalizado"><img src="./img/CART-LOGO.svg" alt="carrito" id="carrito-button-img"></button></a>
             </div>
         </nav>
     </header>
     
     <main>
-        <div class="banner animate__animated animate__backInLeft">
+        <div class="banner animate__animated animate__backInLeft glass-effect">
             <h1>¡AHORRÁ TIEMPO Y DINERO!</h1>
             <h2>ENVÍOS EN EL DÍA</h2>
         </div>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active boxita">
+                <div class="d-block w-100">
+                    <p><em>10% OFF pagando con Mercado Pago o débito</em></p>
+                </div>
+              </div>
+              <div class="carousel-item boxita2">
+                <div class="d-block w-100">
+                    <p><em>Envíos a todo el país</em></p1>
+                </div>
+              </div>
+              <div class="carousel-item boxita3">
+                <div class="d-block w-100">
+                    <p><em>Garantía de 1 año en todos los products</em></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         
         <div>
             <div class="barra-filtros">

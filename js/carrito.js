@@ -2,40 +2,9 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 console.log(carrito);
 
-//FORMATEA UN PRECIO A PESOS ARGENTINOS
-//FUNCION// RECIBE UN NUMERO Y DEVUELVE UN STRING CON EL NUMERO FORMATEADO
 function formatearPrecioARS(precio) {
     return precio.toLocaleString("es-AR", { style: "currency", currency: "ARS" });
 }
-/*
-const renderProducts = (arrayArticulos) => {
-    let articulosCarrito = document.getElementById("container-cart");
-    articulosCarrito.innerHTML = "";
-
-    // Renderizar
-
-    arrayArticulos.forEach((articulo) => {
-        let productCard = document.createElement("div");
-        productCard.className = "articulo";
-        productCard.innerHTML = `
-            <img src="${articulo.imagen}"/>
-            <h4>${articulo.nombre}</h4>
-            <p>ID: ${articulo.id}</p>
-            <b>${formatearPrecioARS(articulo.precio)}</b>
-            <p>Stock: ${articulo.stock}</p>
-            <div class="container-buttons-cart">
-                <button onclick="restarCantidad('${articulo.id}')">-</button>
-                <p>${articulo.quantity}</p>
-                <button onclick="sumarCantidad('${articulo.id}')">+</button>
-            </div>
-            
-            <button onclick="eliminarDelCarrito('${articulo.id
-                }')">Eliminar del carrito</button>`;
-
-        articulosCarrito.appendChild(productCard);
-    });
-};
-*/
 
 const renderProducts = (arrayArticulos) => {
     let articulosContainer = document.getElementById("container-cart");
@@ -66,12 +35,13 @@ const renderProducts = (arrayArticulos) => {
                 <div class="card-footer-carrito">
                     <span class="text-title">${formatearPrecioARS(articulo.precio)}</span>
                     <div class="container-buttons-cart">
-                        <button onclick="restarCantidad('${articulo.id}')">-</button>
+                        <button onclick="restarCantidad('${articulo.id}')" class="modificarArticuloCarritoBtn">-</button>
                         <p>${articulo.quantity}</p>
-                        <button onclick="sumarCantidad('${articulo.id}')">+</button>
+                        <button onclick="sumarCantidad('${articulo.id}')" class="modificarArticuloCarritoBtn">+</button>
                     </div>
-                    <button onclick="eliminarDelCarrito('${articulo.id}')">
+                    <button onclick="eliminarDelCarrito('${articulo.id}')" class="eliminarArticuloBtn">
                         <img src="./img/TRASH-LOGO.svg" alt="eliminar" class="trash-logo">
+                        Eliminar
                     </button>
                 </div>
             </div>`;
@@ -157,8 +127,9 @@ const renderTotal = (arrayArticulos) => {
 
     totalContainer.appendChild(table);
 
-    let totalElement = document.createElement("h3");
-    totalElement.innerHTML = `TOTAL: ${formatearPrecioARS(total)} <button id="confirmar">Confirmar compra</button>`;
+    let totalElement = document.createElement("div");
+    totalElement.className = "total"
+    totalElement.innerHTML = `<h3>TOTAL: ${formatearPrecioARS(total)}</h3> <button id="confirmar">Confirmar compra</button>`;
     totalContainer.appendChild(totalElement);
 }
 

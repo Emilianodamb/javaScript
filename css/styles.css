@@ -3,12 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.index{
     display: flex;
     flex-direction: column;
     color: #333333;
     font-family: "Kanit", sans-serif;
     padding: 0;
+    background-image: url(../img/herramientas-fondo-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.carrito{
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+    font-family: "Kanit", sans-serif;
+    padding: 0;
+    background-image: url(../img/herramientas-fondo-carrito.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header{
     width: 100%;
@@ -27,6 +42,9 @@ nav{
     display: flex;
     width: 100%;
     align-items: baseline;
+}
+main{
+    padding: 2em;
 }
 #img-logo{
     height: 5em;
@@ -96,10 +114,11 @@ footer{
 }
 
 h1{
+    display: inline;
     font-size: 3rem;
     font-weight: bolder;
-    color: #69a70d;
-    text-shadow: black 1.5px 1.5px;
+    color: #fbca1f;
+    text-shadow: white 1px 1px, #000000 2px 2px;
 }
 h2{
     font-weight: bolder;
@@ -117,11 +136,15 @@ p{
 
 
 #container-cart{
-    width: 100%;
-    margin: 2em;
-    height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    padding: 1.5em;
+    margin: 2em;
+    background-color: #87878787;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    height: fit-content;
+    
     justify-content: center;
     gap: 2em;
 }
@@ -214,7 +237,6 @@ p{
 
 
 
-
 /*///////////////////////////*/
 
     .card {
@@ -289,10 +311,8 @@ p{
 
 
 
-html{
-    background-color: #ffffff;
-}
-button {
+
+   .boton-personalizado{
     background: #fbca1f;
     padding: 0.6em 1.3em;
     font-weight: 900;
@@ -303,12 +323,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.boton-personalizado:hover {
     transform: translate(0, -0.1em);
     box-shadow: 0 0.15em;
 }
 
-button:active {
+.boton-personalizado:active {
     transform: translate(0, 0.05em);
     box-shadow: 0 0.05em;
 }
@@ -358,21 +378,32 @@ button:active {
 }
 
 #container-total{
+    padding: 0;
+    overflow: scroll;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    border:#000000 5px solid;
+    border:#000000 3px solid;
 }
+
 .articulos-total{
     border:#000000 1px solid;
 }
 .articulos-total td{
     border:#000000 1px solid;
+    padding: .1em;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-/*Para pantallas menores a 480px width*/
-@media screen and (max-width: 480px) {
+/*Para pantallas menores a 737px width*/
+@media screen and (max-width: 767px) {
     nav{
         display: flex;
         flex-direction: column;
@@ -382,6 +413,9 @@ button:active {
     }
     header{
         width: 100%;
+    }
+    main{
+        padding: 0;
     }
     .barra-filtros{
         display: flex;
@@ -407,19 +441,17 @@ button:active {
     /**/
 
     #container-cart{
-        width: 100%;
-        margin: 2em;
-        height: fit-content;
+        height: auto;
         display: flex;
         gap: 2em;
     }
     .articulo-carrito{
         display: flex;
-        width: 100%;
+        width: auto;
     }
     .card-carrito{
         display: flex;
-        width: 100%;
+        width: fit-content;
         padding: .8em;
         background: #f5f5f5;
         border-radius: 3px;
@@ -453,21 +485,112 @@ button:active {
         width: 2em;
     }
 
+    #container-total{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        overflow: scroll;
+        background-color: #f1f1f1;
+        align-items: stretch;
+        border:#000000 3px solid;
+    }
+
     /**/
 
-
-
-
-
-
+    .carousel-item div p em{
+        font-size: 5vh;
+    }
 
 }
 
-td{
-    width: 20px;
-}
+
+
+
 #confirmar{
     font-weight: 600;
     text-shadow: #f1f1f18d 1px 1px;
     background-color: #00d632;
+}
+
+
+
+
+
+
+.eliminarArticuloBtn{
+    background: #ff715b;
+    padding: 0 0.3vh 0 0;
+    font-weight: 900;
+    font-size: 0.9rem;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0 0.1em;
+    cursor: pointer;
+}
+
+.eliminarArticuloBtn:active{
+    background-color: #ff5b5b;
+}
+
+.modificarArticuloCarritoBtn{
+    background: #fbca1f;
+    padding: .3vh 1vh;
+    font-weight: 900;
+    font-size: 2vh;
+    border: 3px solid black;
+    border-radius: .4em;
+    box-shadow: 0 .1em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*Carousel*/
+
+.boxita{
+    background-color: hsl(329, 84%, 54%);
+    height: min-content;
+    min-height: 5em;
+    padding: 2em;
+}
+
+.boxita2{
+    background-color: rgb(109, 230, 48);
+    min-height: 5em;
+    padding: 2em;
+}
+.boxita3{
+    background-color: rgb(40, 234, 140);
+    height: min-content;
+    min-height: 5em;
+    padding: 2em;
+}
+
+
+.carousel-item div p{
+    
+    color: #ddd;
+    text-shadow: #000000 1px 1px;
+    font-size: 5vh;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.glass-effect {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Difumina el fondo detrás del elemento */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores Webkit */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde blanco semitransparente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
 }
