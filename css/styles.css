@@ -497,8 +497,17 @@ p{
 
     /**/
 
+    .carousel-item{
+        align-content: center;
+    }
+
     .carousel-item div p em{
-        font-size: 5vh;
+        font-size: 3vh;
+    }
+
+    .boxita, .boxita2, .boxita3{
+        height: 30vh;
+        padding: 2em;
     }
 
 }
@@ -554,30 +563,30 @@ p{
 /*Carousel*/
 
 .boxita{
-    background-color: hsl(329, 84%, 54%);
-    height: min-content;
-    min-height: 5em;
+    background-color: hwb(329 15% 7% / 0.5);
+    backdrop-filter: blur(10px);
+    min-height: 4em;
     padding: 2em;
 }
 
 .boxita2{
-    background-color: rgb(109, 230, 48);
-    min-height: 5em;
+    background-color: hwb(100 19% 10% / 0.5);
+    backdrop-filter: blur(10px);
+    min-height: 4em;
     padding: 2em;
 }
 .boxita3{
-    background-color: rgb(40, 234, 140);
-    height: min-content;
-    min-height: 5em;
+    background-color: hwb(151 16% 8% / 0.5);
+    backdrop-filter: blur(10px);
+    min-height: 4em;
     padding: 2em;
 }
 
 
 .carousel-item div p{
-    
-    color: #ddd;
-    text-shadow: #000000 1px 1px;
-    font-size: 5vh;
+    color: #000000;
+    text-shadow: #ddd  1px 1px;
+    font-size: 4vh;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -593,4 +602,27 @@ p{
     border-radius: 10px; /* Esquinas redondeadas */
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+
+
+/* Estilos para dispositivos pequeños (smartphones) */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para dispositivos medianos (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para dispositivos grandes (laptops, desktops) */
+@media (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
 }
