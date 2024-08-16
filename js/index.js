@@ -1,10 +1,11 @@
 class Articulo {
-  constructor(nombre, id, stock, precio, categorias) {
+  constructor(nombre, id, stock, precio, categorias, descripcion) {
     this.nombre = nombre;
     this.id = id;
     this.stock = parseInt(stock, 10);
     this.precio = parseFloat(precio);
     this.categorias = categorias;
+    this.descripcion = descripcion;
   }
 }
 
@@ -13,154 +14,27 @@ const categorias = [
   "Herramientas Manuales",
   "Herramientas Eléctricas",
   "Materiales de Construcción",
-  "Carpintería",
   "Pinturas y Accesorios",
   "Ferretería General",
   "Electricidad",
-  "Sanitarios",
   "Jardinería",
-  "Seguridad",
-  "Adhesivos y Selladores",
-  "Hogar y Organización",
+  "Adhesivos",
+  "Iluminación"
 ];
 
 // INICIALIZA EL INVENTARIO
-const inventario = [
-  {
-    nombre: "Maza",
-    id: "1123",
-    stock: 200,
-    precio: 255.99,
-    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Sierra",
-    id: "121",
-    stock: 300,
-    precio: 200.49,
-    categorias: [
-      "Herramientas Manuales",
-      "Materiales de Construcción",
-      "Carpintería",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Martillo",
-    id: "3163",
-    stock: 250,
-    precio: 1500,
-    categorias: [
-      "Herramientas Manuales",
-      "Materiales de Construcción",
-      "Carpintería",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Clavos",
-    id: "443",
-    stock: 15000,
-    precio: 4.47,
-    categorias: [
-      "Herramientas Manuales",
-      "Materiales de Construcción",
-      "Carpintería",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Madera",
-    id: "1023",
-    stock: 290,
-    precio: 255.99,
-    categorias: [
-      "Herramientas Manuales",
-      "Materiales de Construcción",
-      "Carpintería",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Hacha",
-    id: "25",
-    stock: 500,
-    precio: 564,
-    categorias: [
-      "Pinturas y Accesorios",
-      "Ferretería General",
-      "Electricidad",
-      "Sanitarios",
-      "Jardinería",
-      "Seguridad",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Veneno",
-    id: "355",
-    stock: 126,
-    precio: 255.99,
-    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Amoniaco",
-    id: "265",
-    stock: 458,
-    precio: 200.49,
-    categorias: [
-      "Pinturas y Accesorios",
-      "Ferretería General",
-      "Electricidad",
-      "Sanitarios",
-      "Jardinería",
-      "Seguridad",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Serrucho",
-    id: "126",
-    stock: 556,
-    precio: 1500,
-    categorias: ["Herramientas Manuales", "Carpinteria"],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Caño 1'",
-    id: "9854",
-    stock: 3000,
-    precio: 4.47,
-    categorias: [
-      "Ferretería General",
-      "Materiales de Construcción",
-      "Sanitarios",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Maderita",
-    id: "963",
-    stock: 12,
-    precio: 22.59,
-    categorias: [
-      "Ferretería General",
-      "Jardinería",
-      "Materiales de Construcción",
-    ],
-    imagen: "https://via.placeholder.com/100",
-  },
-  {
-    nombre: "Virulana",
-    id: "77",
-    stock: 123,
-    precio: 129.5,
-    categorias: ["Herramientas Manuales", "Materiales de Construcción"],
-    imagen: "https://via.placeholder.com/100",
-  },
-];
+let inventario = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  let getInventario = fetch("../inventario.json")
+  getInventario
+    .then((res) => res.json())
+    .then((res) => {
+      inventario = res
+      renderProducts(inventario)
+    })
+    .catch((error) => console.log("error ", error))
+})
 
 function completarConCeros(numero, tam) {
   let string = String(numero);
@@ -201,7 +75,7 @@ const renderProducts = (arrayArticulos) => {
           <img src="${articulo.imagen}" class="card-img"/>
           <div class="card-info">
             <h4 class="text-title">${articulo.nombre}</h4>
-            <p class="text-body">Product description and details</p>
+            <p class="text-body">${articulo.descripcion}</p>
             <p>ID: ${articulo.id}</p>
             <p>Stock: ${articulo.stock}</p>
           </div>
@@ -226,12 +100,44 @@ const agregarAlCarrito = (id) => {
   let articulo = inventario.find((elemento) => elemento.id === id);
   let articuloEnElCarrito = carrito.find(elemento => elemento.id === id)
 
-  if (articuloEnElCarrito) {
-    articuloEnElCarrito.quantity += 1
-  } else {
-    carrito.push({ ...articulo, quantity: 1 });
+  if (articulo.stock > 0) {
+    if (articuloEnElCarrito) {
+      if (articuloEnElCarrito.quantity < articulo.stock) {
+        articuloEnElCarrito.quantity += 1
 
+        Swal.fire({
+          html: `Se agregó ${articulo.nombre} al carrito`,
+          showConfirmButton: false,
+          position: 'bottom',
+          toast: true,
+          customClass: {
+            width: '200px',
+            textAlign: 'center'
+          }
+        });
+
+      } else {
+        console.log("No hay stock de este")
+      }
+
+    } else {
+      carrito.push({ ...articulo, quantity: 1 });
+
+      Swal.fire({
+          html: `Se agregó ${articulo.nombre} al carrito`,
+          showConfirmButton: false,
+          position: 'bottom',
+          toast: true,
+          customClass: {
+            width: '200px',
+            textAlign: 'center'
+          }
+      });
+    }
+  } else {
+    console.log("No hay stock de este")
   }
+
   localStorage.setItem("carrito", JSON.stringify(carrito))
 };
 
@@ -281,11 +187,3 @@ if (inputBuscador) {
     renderProducts(arrayFiltrado);
   });
 }
-
-
-
-
-
-
-
-

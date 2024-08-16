@@ -1,0 +1,723 @@
+[
+    {
+        "nombre": "Tornillo",
+        "id": "1001",
+        "stock": 1000,
+        "precio": 0.10,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Tornillo de acero inoxidable, rosca fina"
+    },
+    {
+        "nombre": "Tuerca",
+        "id": "1002",
+        "stock": 800,
+        "precio": 0.08,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Tuerca hexagonal estándar, varios tamaños"
+    },
+    {
+        "nombre": "Clavo",
+        "id": "1003",
+        "stock": 1200,
+        "precio": 0.05,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Clavo galvanizado para madera y metal"
+    },
+    {
+        "nombre": "Arandela",
+        "id": "1004",
+        "stock": 900,
+        "precio": 0.02,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Arandela plana de acero, resistente"
+    },
+    {
+        "nombre": "Taladro",
+        "id": "1005",
+        "stock": 50,
+        "precio": 150.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Taladro eléctrico, 20V, compacto"
+    },
+    {
+        "nombre": "Destornillador",
+        "id": "1006",
+        "stock": 300,
+        "precio": 5.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Destornillador Phillips, punta magnética"
+    },
+    {
+        "nombre": "Martillo",
+        "id": "1007",
+        "stock": 200,
+        "precio": 12.50,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Martillo de acero, mango ergonómico"
+    },
+    {
+        "nombre": "Sierra",
+        "id": "1008",
+        "stock": 150,
+        "precio": 20.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Sierra manual de precisión, acero"
+    },
+    {
+        "nombre": "Llave Inglesa",
+        "id": "1009",
+        "stock": 100,
+        "precio": 25.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Llave ajustable, fácil agarre"
+    },
+    {
+        "nombre": "Alicate",
+        "id": "1010",
+        "stock": 180,
+        "precio": 15.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Alicate multiuso, corta y sujeta"
+    },
+    {
+        "nombre": "Cinta Aislante",
+        "id": "1011",
+        "stock": 500,
+        "precio": 3.00,
+        "categorias": ["Ferretería General", "Electricidad"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cinta de PVC, aislante"
+    },
+    {
+        "nombre": "Silicona",
+        "id": "1012",
+        "stock": 250,
+        "precio": 7.00,
+        "categorias": ["Ferretería General", "Adhesivos"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Silicona sellante, transparente"
+    },
+    {
+        "nombre": "Cemento",
+        "id": "1013",
+        "stock": 300,
+        "precio": 10.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cemento de alta resistencia"
+    },
+    {
+        "nombre": "Masa",
+        "id": "1014",
+        "stock": 100,
+        "precio": 25.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Masa de albañil, resistente"
+    },
+    {
+        "nombre": "Pala",
+        "id": "1015",
+        "stock": 150,
+        "precio": 20.00,
+        "categorias": ["Jardinería", "Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pala de acero, mango largo"
+    },
+    {
+        "nombre": "Pintura",
+        "id": "1016",
+        "stock": 400,
+        "precio": 12.00,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pintura acrílica, colores varios"
+    },
+    {
+        "nombre": "Lija",
+        "id": "1017",
+        "stock": 300,
+        "precio": 2.50,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Lija de grano fino, pulidora"
+    },
+    {
+        "nombre": "Manguera",
+        "id": "1018",
+        "stock": 100,
+        "precio": 35.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Manguera flexible, alta presión"
+    },
+    {
+        "nombre": "Cerradura",
+        "id": "1019",
+        "stock": 75,
+        "precio": 50.00,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cerradura de seguridad, llave única"
+    },
+    {
+        "nombre": "Candado",
+        "id": "1020",
+        "stock": 120,
+        "precio": 15.00,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Candado resistente, alta seguridad"
+    },
+    {
+        "nombre": "Broca",
+        "id": "1021",
+        "stock": 250,
+        "precio": 5.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Broca para taladro, acero"
+    },
+    {
+        "nombre": "Tornillo de Banco",
+        "id": "1022",
+        "stock": 60,
+        "precio": 75.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Tornillo robusto, sujeción segura"
+    },
+    {
+        "nombre": "Nivel Láser",
+        "id": "1023",
+        "stock": 30,
+        "precio": 120.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Nivel láser de precisión, fácil uso"
+    },
+    {
+        "nombre": "Lámpara LED",
+        "id": "1024",
+        "stock": 200,
+        "precio": 25.00,
+        "categorias": ["Electricidad", "Iluminación"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Lámpara LED, bajo consumo"
+    },
+    {
+        "nombre": "Extensión Eléctrica",
+        "id": "1025",
+        "stock": 150,
+        "precio": 30.00,
+        "categorias": ["Electricidad"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Extensión de 10 metros, segura"
+    },
+    {
+        "nombre": "Cinta Métrica",
+        "id": "1026",
+        "stock": 200,
+        "precio": 10.00,
+        "categorias": ["Herramientas Manuales"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cinta métrica de 5m, compacta"
+    },
+    {
+        "nombre": "Pulidora",
+        "id": "1027",
+        "stock": 40,
+        "precio": 100.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pulidora eléctrica, alto rendimiento"
+    },
+    {
+        "nombre": "Compresor de Aire",
+        "id": "1028",
+        "stock": 25,
+        "precio": 250.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Compresor portátil, alta potencia"
+    },
+    {
+        "nombre": "Generador Eléctrico",
+        "id": "1029",
+        "stock": 10,
+        "precio": 500.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Generador de emergencia, silencioso"
+    },
+    {
+        "nombre": "Soldadora",
+        "id": "1030",
+        "stock": 35,
+        "precio": 200.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Soldadora compacta, alta eficiencia"
+    },
+    {
+        "nombre": "Cortadora de Césped",
+        "id": "1031",
+        "stock": 15,
+        "precio": 350.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cortadora con ajuste de altura"
+    },
+    {
+        "nombre": "Motosierra",
+        "id": "1032",
+        "stock": 20,
+        "precio": 400.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Motosierra potente, fácil manejo"
+    },
+    {
+        "nombre": "Hidrolavadora",
+        "id": "1033",
+        "stock": 18,
+        "precio": 300.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Hidrolavadora portátil, alta presión"
+    },
+    {
+        "nombre": "Bomba de Agua",
+        "id": "1034",
+        "stock": 22,
+        "precio": 150.00,
+        "categorias": ["Jardinería", "Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Bomba sumergible, autocebante"
+    },
+    {
+        "nombre": "Soplador de Hojas",
+        "id": "1035",
+        "stock": 12,
+        "precio": 200.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Soplador de hojas, ligero"
+    },
+    {
+        "nombre": "Amoladora",
+        "id": "1036",
+        "stock": 50,
+        "precio": 75.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Amoladora de mano, 1000W"
+    },
+    {
+        "nombre": "Lijadora",
+        "id": "1037",
+        "stock": 45,
+        "precio": 65.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Lijadora orbital, suave acabado"
+    },
+    {
+        "nombre": "Escalera",
+        "id": "1038",
+        "stock": 80,
+        "precio": 60.00,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Escalera plegable, aluminio"
+    },
+    {
+        "nombre": "Carretilla",
+        "id": "1039",
+        "stock": 70,
+        "precio": 80.00,
+        "categorias": ["Jardinería", "Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Carretilla robusta, alta capacidad"
+    },
+    {
+        "nombre": "Carretilla Elevadora",
+        "id": "1040",
+        "stock": 5,
+        "precio": 1500.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Elevadora compacta, alto alcance"
+    },
+    {
+        "nombre": "Placa Vibratoria",
+        "id": "1041",
+        "stock": 8,
+        "precio": 900.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Placa vibratoria, compactación eficaz"
+    },
+    {
+        "nombre": "Cortadora de Baldosas",
+        "id": "1042",
+        "stock": 30,
+        "precio": 120.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cortadora manual, alta precisión"
+    },
+    {
+        "nombre": "Calefactor",
+        "id": "1043",
+        "stock": 60,
+        "precio": 40.00,
+        "categorias": ["Electricidad", "Iluminación"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Calefactor portátil, bajo consumo"
+    },
+    {
+        "nombre": "Termotanque",
+        "id": "1044",
+        "stock": 15,
+        "precio": 400.00,
+        "categorias": ["Electricidad"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Termotanque de alta eficiencia"
+    },
+    {
+        "nombre": "Detector de Metales",
+        "id": "1045",
+        "stock": 25,
+        "precio": 150.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Detector portátil, alta precisión"
+    },
+    {
+        "nombre": "Escalera Telescópica",
+        "id": "1046",
+        "stock": 40,
+        "precio": 120.00,
+        "categorias": ["Ferretería General"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Escalera compacta, fácil transporte"
+    },
+    {
+        "nombre": "Pistola de Calor",
+        "id": "1047",
+        "stock": 35,
+        "precio": 50.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pistola de calor ajustable"
+    },
+    {
+        "nombre": "Sierra Circular",
+        "id": "1048",
+        "stock": 30,
+        "precio": 180.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Sierra de alta potencia, portátil"
+    },
+    {
+        "nombre": "Soldador Inverter",
+        "id": "1049",
+        "stock": 20,
+        "precio": 220.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Soldador ligero, alta eficiencia"
+    },
+    {
+        "nombre": "Desbrozadora",
+        "id": "1050",
+        "stock": 25,
+        "precio": 280.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Desbrozadora potente, motor eléctrico"
+    },
+    {
+        "nombre": "Taladro Atornillador",
+        "id": "1051",
+        "stock": 50,
+        "precio": 85.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Taladro inalámbrico, multifuncional"
+    },
+    {
+        "nombre": "Mezcladora de Cemento",
+        "id": "1052",
+        "stock": 10,
+        "precio": 700.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Mezcladora eléctrica, alta capacidad"
+    },
+    {
+        "nombre": "Rodillo de Pintura",
+        "id": "1053",
+        "stock": 150,
+        "precio": 8.00,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Rodillo con mango ergonómico"
+    },
+    {
+        "nombre": "Pistola de Pintura",
+        "id": "1054",
+        "stock": 30,
+        "precio": 60.00,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pistola de alta precisión, portátil"
+    },
+    {
+        "nombre": "Herramienta Multifunción",
+        "id": "1055",
+        "stock": 45,
+        "precio": 95.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Multifunción con accesorios variados"
+    },
+    {
+        "nombre": "Generador Solar",
+        "id": "1056",
+        "stock": 8,
+        "precio": 750.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Generador ecológico, recarga solar"
+    },
+    {
+        "nombre": "Sierra de Calar",
+        "id": "1057",
+        "stock": 40,
+        "precio": 70.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Sierra para cortes precisos, ligera"
+    },
+    {
+        "nombre": "Detector de Humo",
+        "id": "1058",
+        "stock": 90,
+        "precio": 30.00,
+        "categorias": ["Electricidad", "Iluminación"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Detector de humo, fácil instalación"
+    },
+    {
+        "nombre": "Termómetro Infrarrojo",
+        "id": "1059",
+        "stock": 70,
+        "precio": 50.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Termómetro de alta precisión, portátil"
+    },
+    {
+        "nombre": "Multímetro Digital",
+        "id": "1060",
+        "stock": 60,
+        "precio": 40.00,
+        "categorias": ["Electricidad"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Multímetro con pantalla digital"
+    },
+    {
+        "nombre": "Linterna",
+        "id": "1061",
+        "stock": 200,
+        "precio": 15.00,
+        "categorias": ["Electricidad", "Iluminación"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Linterna LED, resistente al agua"
+    },
+    {
+        "nombre": "Aspiradora",
+        "id": "1062",
+        "stock": 35,
+        "precio": 120.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Aspiradora compacta, alta potencia"
+    },
+    {
+        "nombre": "Molde para Hormigón",
+        "id": "1063",
+        "stock": 25,
+        "precio": 45.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Molde durable, diseños variados"
+    },
+    {
+        "nombre": "Rastrillo",
+        "id": "1064",
+        "stock": 80,
+        "precio": 18.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Rastrillo de metal, mango ergonómico"
+    },
+    {
+        "nombre": "Tijeras de Podar",
+        "id": "1065",
+        "stock": 60,
+        "precio": 22.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Tijeras afiladas, mango antideslizante"
+    },
+    {
+        "nombre": "Guantes de Jardinería",
+        "id": "1066",
+        "stock": 150,
+        "precio": 10.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Guantes resistentes, varios tamaños"
+    },
+    {
+        "nombre": "Cortasetos",
+        "id": "1067",
+        "stock": 25,
+        "precio": 95.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Cortasetos eléctrico, ligero"
+    },
+    {
+        "nombre": "Escoba de Jardín",
+        "id": "1068",
+        "stock": 100,
+        "precio": 12.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Escoba para exteriores, resistente"
+    },
+    {
+        "nombre": "Sopladora de Hojas",
+        "id": "1069",
+        "stock": 30,
+        "precio": 130.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Sopladora ligera, potente motor"
+    },
+    {
+        "nombre": "Motosierra a Batería",
+        "id": "1070",
+        "stock": 20,
+        "precio": 350.00,
+        "categorias": ["Jardinería"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Motosierra sin cables, silenciosa"
+    },
+    {
+        "nombre": "Carretilla Plegable",
+        "id": "1071",
+        "stock": 40,
+        "precio": 65.00,
+        "categorias": ["Materiales de Construcción"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Carretilla compacta, fácil almacenamiento"
+    },
+    {
+        "nombre": "Mezcladora de Pintura",
+        "id": "1072",
+        "stock": 15,
+        "precio": 90.00,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Mezcladora eléctrica, rápida"
+    },
+    {
+        "nombre": "Lijadora de Banda",
+        "id": "1073",
+        "stock": 30,
+        "precio": 100.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Lijadora potente, acabados finos"
+    },
+    {
+        "nombre": "Pulverizador de Pintura",
+        "id": "1074",
+        "stock": 20,
+        "precio": 180.00,
+        "categorias": ["Pinturas y Accesorios"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pulverizador preciso, varias boquillas"
+    },
+    {
+        "nombre": "Sierra Sable",
+        "id": "1075",
+        "stock": 25,
+        "precio": 85.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Sierra portátil, cortes en profundidad"
+    },
+    {
+        "nombre": "Detector de Humedad",
+        "id": "1076",
+        "stock": 35,
+        "precio": 45.00,
+        "categorias": ["Electricidad"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Detector digital, precisión garantizada"
+    },
+    {
+        "nombre": "Pulidora Angular",
+        "id": "1077",
+        "stock": 30,
+        "precio": 75.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Pulidora de alta velocidad, segura"
+    },
+    {
+        "nombre": "Amoladora Angular",
+        "id": "1078",
+        "stock": 40,
+        "precio": 85.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Amoladora robusta, motor potente"
+    },
+    {
+        "nombre": "Aspirador de Cenizas",
+        "id": "1079",
+        "stock": 15,
+        "precio": 100.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Aspirador de alta capacidad, filtro HEPA"
+    },
+    {
+        "nombre": "Martillo Rotatorio",
+        "id": "1080",
+        "stock": 25,
+        "precio": 200.00,
+        "categorias": ["Herramientas Eléctricas"],
+        "imagen": "https://via.placeholder.com/100",
+        "descripcion": "Martillo para demolición, alto impacto"
+    }
+]
+

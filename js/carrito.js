@@ -53,10 +53,29 @@ renderProducts(carrito);
 
 
 const eliminarDelCarrito = (id) => {
-    carrito = carrito.filter((articulo) => articulo.id !== id);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    renderProducts(carrito);
-    renderTotal(carrito);
+    Swal.fire({
+        title: "¿Deseas eliminar este artículo del carrito?",
+        text: "Si lo eliminas no podrás disfrutarlo",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, eliminar!",
+        cancelButtonText: "NO"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carrito = carrito.filter((articulo) => articulo.id !== id);
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            renderProducts(carrito);
+            renderTotal(carrito);
+
+            Swal.fire({
+                text: "Se eliminó el artículo",
+                icon: "success"
+            });
+        }
+    });
+    
 };
 
 const restarCantidad = (id) => {
@@ -64,14 +83,6 @@ const restarCantidad = (id) => {
     if (productoEncontrado) {
         if (productoEncontrado.quantity > 1) {
             productoEncontrado.quantity -= 1;
-            Toastify({
-                text: `Se restó una unidad de ${productoEncontrado.nombre}`,
-                gravity: "bottom",
-                duration: 3000,
-                position: "right",
-                close: true,
-                stopOnFocus: true
-            }).showToast()
         } else {
             eliminarDelCarrito(productoEncontrado.id);
         }
@@ -134,3 +145,4 @@ const renderTotal = (arrayArticulos) => {
 }
 
 renderTotal(carrito);
+
