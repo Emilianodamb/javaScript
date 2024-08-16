@@ -5,7 +5,7 @@
         "stock": 1000,
         "precio": 0.10,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_948468-MLU72721062757_112023-F.webp",
         "descripcion": "Tornillo de acero inoxidable, rosca fina"
     },
     {
@@ -14,7 +14,7 @@
         "stock": 800,
         "precio": 0.08,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_965602-MLU75297044911_032024-F.webp",
         "descripcion": "Tuerca hexagonal estándar, varios tamaños"
     },
     {
@@ -23,7 +23,7 @@
         "stock": 1200,
         "precio": 0.05,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_729076-MLA73949651547_012024-F.webp",
         "descripcion": "Clavo galvanizado para madera y metal"
     },
     {
@@ -32,17 +32,17 @@
         "stock": 900,
         "precio": 0.02,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_609169-MLA31852683629_082019-F.webp",
         "descripcion": "Arandela plana de acero, resistente"
     },
     {
-        "nombre": "Taladro",
+        "nombre": "Taladro rotopercutor",
         "id": "1005",
         "stock": 50,
         "precio": 150.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Taladro eléctrico, 20V, compacto"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_893174-MLU73213836505_122023-F.webp",
+        "descripcion": "Taladro rotopercutor eléctrico, 220V, compacto"
     },
     {
         "nombre": "Destornillador",
@@ -50,7 +50,7 @@
         "stock": 300,
         "precio": 5.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_847755-MLU75766297776_042024-F.webp",
         "descripcion": "Destornillador Phillips, punta magnética"
     },
     {
@@ -59,7 +59,7 @@
         "stock": 200,
         "precio": 12.50,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_787062-MLU76765887701_062024-F.webp",
         "descripcion": "Martillo de acero, mango ergonómico"
     },
     {
@@ -68,16 +68,16 @@
         "stock": 150,
         "precio": 20.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_937478-MLU70516386965_072023-F.webp",
         "descripcion": "Sierra manual de precisión, acero"
     },
     {
-        "nombre": "Llave Inglesa",
+        "nombre": "Llave Francesa",
         "id": "1009",
         "stock": 100,
         "precio": 25.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_864316-MLU73199572643_122023-F.webp",
         "descripcion": "Llave ajustable, fácil agarre"
     },
     {
@@ -86,25 +86,25 @@
         "stock": 180,
         "precio": 15.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_637048-MLA49173375188_022022-F.webp",
         "descripcion": "Alicate multiuso, corta y sujeta"
     },
     {
-        "nombre": "Cinta Aislante",
+        "nombre": "Cinta Aisladora",
         "id": "1011",
         "stock": 500,
         "precio": 3.00,
         "categorias": ["Ferretería General", "Electricidad"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_850558-MLU74087453977_012024-F.webp",
         "descripcion": "Cinta de PVC, aislante"
     },
     {
-        "nombre": "Silicona",
+        "nombre": "Silicona líquida",
         "id": "1012",
         "stock": 250,
         "precio": 7.00,
         "categorias": ["Ferretería General", "Adhesivos"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_774797-MLA69544959199_052023-F.webp",
         "descripcion": "Silicona sellante, transparente"
     },
     {
@@ -113,25 +113,25 @@
         "stock": 300,
         "precio": 10.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_983828-MLU70636920176_072023-F.webp",
         "descripcion": "Cemento de alta resistencia"
     },
     {
-        "nombre": "Masa",
+        "nombre": "Maza",
         "id": "1014",
         "stock": 100,
         "precio": 25.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Masa de albañil, resistente"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_691910-MLA76001396779_042024-F.webp",
+        "descripcion": "Maza de albañil, resistente"
     },
     {
-        "nombre": "Pala",
+        "nombre": "Pala ancha",
         "id": "1015",
         "stock": 150,
         "precio": 20.00,
         "categorias": ["Jardinería", "Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_782295-MLU72696156100_112023-F.webp",
         "descripcion": "Pala de acero, mango largo"
     },
     {
@@ -140,7 +140,7 @@
         "stock": 400,
         "precio": 12.00,
         "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_612789-MLA69837041747_062023-F.webp",
         "descripcion": "Pintura acrílica, colores varios"
     },
     {
@@ -149,8 +149,8 @@
         "stock": 300,
         "precio": 2.50,
         "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Lija de grano fino, pulidora"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_848239-MLU71081420201_082023-F.webp",
+        "descripcion": "Lija para madera y pared"
     },
     {
         "nombre": "Manguera",
@@ -158,7 +158,7 @@
         "stock": 100,
         "precio": 35.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_661119-MLU74332435420_022024-F.webp",
         "descripcion": "Manguera flexible, alta presión"
     },
     {
@@ -167,7 +167,7 @@
         "stock": 75,
         "precio": 50.00,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_967769-MLU72571345982_112023-F.webp",
         "descripcion": "Cerradura de seguridad, llave única"
     },
     {
@@ -176,26 +176,26 @@
         "stock": 120,
         "precio": 15.00,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_818831-MLA32710889841_102019-F.webp",
         "descripcion": "Candado resistente, alta seguridad"
     },
     {
-        "nombre": "Broca",
+        "nombre": "Broca escalonada",
         "id": "1021",
         "stock": 250,
         "precio": 5.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Broca para taladro, acero"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_989102-MLA51652759573_092022-F.webp",
+        "descripcion": "Broca escalonada para taladro, acero"
     },
     {
-        "nombre": "Tornillo de Banco",
+        "nombre": "Morsa de Banco",
         "id": "1022",
         "stock": 60,
         "precio": 75.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Tornillo robusto, sujeción segura"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_657092-MLU72537368470_112023-F.webp",
+        "descripcion": "Morsa robusta, sujeción segura"
     },
     {
         "nombre": "Nivel Láser",
@@ -203,25 +203,25 @@
         "stock": 30,
         "precio": 120.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_769568-MLA52498098973_112022-F.webp",
         "descripcion": "Nivel láser de precisión, fácil uso"
     },
     {
-        "nombre": "Lámpara LED",
+        "nombre": "Lámpara LED 50w",
         "id": "1024",
         "stock": 200,
         "precio": 25.00,
         "categorias": ["Electricidad", "Iluminación"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Lámpara LED, bajo consumo"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_887415-MLU73200882869_122023-F.webp",
+        "descripcion": "Lámpara LED 50w, bajo consumo"
     },
     {
-        "nombre": "Extensión Eléctrica",
+        "nombre": "Alargue tripolar macho/hembra",
         "id": "1025",
         "stock": 150,
         "precio": 30.00,
         "categorias": ["Electricidad"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_990470-MLU74826720747_022024-F.webp",
         "descripcion": "Extensión de 10 metros, segura"
     },
     {
@@ -230,7 +230,7 @@
         "stock": 200,
         "precio": 10.00,
         "categorias": ["Herramientas Manuales"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_611249-MLU78073448959_072024-F.webp",
         "descripcion": "Cinta métrica de 5m, compacta"
     },
     {
@@ -239,7 +239,7 @@
         "stock": 40,
         "precio": 100.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_993386-MLU72628276982_112023-F.webp",
         "descripcion": "Pulidora eléctrica, alto rendimiento"
     },
     {
@@ -248,7 +248,7 @@
         "stock": 25,
         "precio": 250.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_684005-MLA51166917054_082022-F.webp",
         "descripcion": "Compresor portátil, alta potencia"
     },
     {
@@ -257,8 +257,8 @@
         "stock": 10,
         "precio": 500.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Generador de emergencia, silencioso"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_898949-MLU73266630327_122023-F.webp",
+        "descripcion": "Generador de emergencia, capacidad 8500v"
     },
     {
         "nombre": "Soldadora",
@@ -266,7 +266,7 @@
         "stock": 35,
         "precio": 200.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_995981-MLA53566435141_022023-F.webp",
         "descripcion": "Soldadora compacta, alta eficiencia"
     },
     {
@@ -275,8 +275,8 @@
         "stock": 15,
         "precio": 350.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Cortadora con ajuste de altura"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_704324-MLU77823490617_072024-F.webp",
+        "descripcion": "Cortadora de césped a nafta"
     },
     {
         "nombre": "Motosierra",
@@ -284,7 +284,7 @@
         "stock": 20,
         "precio": 400.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_739421-MLU72748182488_112023-F.webp",
         "descripcion": "Motosierra potente, fácil manejo"
     },
     {
@@ -293,7 +293,7 @@
         "stock": 18,
         "precio": 300.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_884675-MLU72700168165_112023-F.webp",
         "descripcion": "Hidrolavadora portátil, alta presión"
     },
     {
@@ -302,8 +302,8 @@
         "stock": 22,
         "precio": 150.00,
         "categorias": ["Jardinería", "Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Bomba sumergible, autocebante"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_826679-MLA46315966483_062021-F.webp",
+        "descripcion": "Bomba centrífuga monofásica"
     },
     {
         "nombre": "Soplador de Hojas",
@@ -311,7 +311,7 @@
         "stock": 12,
         "precio": 200.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_841095-MLU77828280621_072024-F.webp",
         "descripcion": "Soplador de hojas, ligero"
     },
     {
@@ -320,8 +320,8 @@
         "stock": 50,
         "precio": 75.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Amoladora de mano, 1000W"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_725230-MLA42137870004_062020-F.webp",
+        "descripcion": "Amoladora de mano, 830W"
     },
     {
         "nombre": "Lijadora",
@@ -329,7 +329,7 @@
         "stock": 45,
         "precio": 65.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_627375-MLU72749845828_112023-F.webp",
         "descripcion": "Lijadora orbital, suave acabado"
     },
     {
@@ -338,7 +338,7 @@
         "stock": 80,
         "precio": 60.00,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_915061-MLU72772530366_112023-F.webp",
         "descripcion": "Escalera plegable, aluminio"
     },
     {
@@ -347,17 +347,17 @@
         "stock": 70,
         "precio": 80.00,
         "categorias": ["Jardinería", "Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_640775-MLU72744055356_112023-F.webp",
         "descripcion": "Carretilla robusta, alta capacidad"
     },
     {
-        "nombre": "Carretilla Elevadora",
+        "nombre": "Crique para auto",
         "id": "1040",
         "stock": 5,
         "precio": 1500.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Elevadora compacta, alto alcance"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_606956-MLU72754972708_112023-F.webp",
+        "descripcion": "Ctrique 2tn, Gato hidráulico"
     },
     {
         "nombre": "Placa Vibratoria",
@@ -365,7 +365,7 @@
         "stock": 8,
         "precio": 900.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_986562-MLA71258672118_082023-F.webp",
         "descripcion": "Placa vibratoria, compactación eficaz"
     },
     {
@@ -374,7 +374,7 @@
         "stock": 30,
         "precio": 120.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_993218-MLU73957712872_012024-F.webp",
         "descripcion": "Cortadora manual, alta precisión"
     },
     {
@@ -382,8 +382,8 @@
         "id": "1043",
         "stock": 60,
         "precio": 40.00,
-        "categorias": ["Electricidad", "Iluminación"],
-        "imagen": "https://via.placeholder.com/100",
+        "categorias": ["Electricidad"],
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_923897-MLU72836486599_112023-F.webp",
         "descripcion": "Calefactor portátil, bajo consumo"
     },
     {
@@ -392,7 +392,7 @@
         "stock": 15,
         "precio": 400.00,
         "categorias": ["Electricidad"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_659711-MLU76298158908_052024-F.webp",
         "descripcion": "Termotanque de alta eficiencia"
     },
     {
@@ -401,7 +401,7 @@
         "stock": 25,
         "precio": 150.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_841307-MLA53023046456_122022-F.webp",
         "descripcion": "Detector portátil, alta precisión"
     },
     {
@@ -410,7 +410,7 @@
         "stock": 40,
         "precio": 120.00,
         "categorias": ["Ferretería General"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_600529-MLU72537276512_102023-F.webp",
         "descripcion": "Escalera compacta, fácil transporte"
     },
     {
@@ -419,7 +419,7 @@
         "stock": 35,
         "precio": 50.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_731995-MLU69354384062_052023-F.webp",
         "descripcion": "Pistola de calor ajustable"
     },
     {
@@ -428,7 +428,7 @@
         "stock": 30,
         "precio": 180.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_634749-MLU72675271908_112023-F.webp",
         "descripcion": "Sierra de alta potencia, portátil"
     },
     {
@@ -437,7 +437,7 @@
         "stock": 20,
         "precio": 220.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_896446-MLU72644549501_112023-F.webp",
         "descripcion": "Soldador ligero, alta eficiencia"
     },
     {
@@ -446,8 +446,8 @@
         "stock": 25,
         "precio": 280.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Desbrozadora potente, motor eléctrico"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_979481-MLA51344455811_082022-F.webp",
+        "descripcion": "Desbrozadora potente, motor a nafta"
     },
     {
         "nombre": "Taladro Atornillador",
@@ -455,7 +455,7 @@
         "stock": 50,
         "precio": 85.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_889669-MLU76091287733_042024-F.webp",
         "descripcion": "Taladro inalámbrico, multifuncional"
     },
     {
@@ -464,7 +464,7 @@
         "stock": 10,
         "precio": 700.00,
         "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_967444-MLA44096842877_112020-F.webp",
         "descripcion": "Mezcladora eléctrica, alta capacidad"
     },
     {
@@ -473,7 +473,7 @@
         "stock": 150,
         "precio": 8.00,
         "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_679056-MLU76409620613_052024-F.webp",
         "descripcion": "Rodillo con mango ergonómico"
     },
     {
@@ -482,7 +482,7 @@
         "stock": 30,
         "precio": 60.00,
         "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_867574-MLA53146221025_012023-F.webp",
         "descripcion": "Pistola de alta precisión, portátil"
     },
     {
@@ -491,7 +491,7 @@
         "stock": 45,
         "precio": 95.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_999350-MLU71136006816_082023-F.webp",
         "descripcion": "Multifunción con accesorios variados"
     },
     {
@@ -500,17 +500,17 @@
         "stock": 8,
         "precio": 750.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_989884-MLA75795412511_042024-F.webp",
         "descripcion": "Generador ecológico, recarga solar"
     },
     {
-        "nombre": "Sierra de Calar",
+        "nombre": "Caladora eléctrica",
         "id": "1057",
         "stock": 40,
         "precio": 70.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Sierra para cortes precisos, ligera"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_645420-MLU75805506880_042024-F.webp",
+        "descripcion": "Para cortes precisos, ligera"
     },
     {
         "nombre": "Detector de Humo",
@@ -518,7 +518,7 @@
         "stock": 90,
         "precio": 30.00,
         "categorias": ["Electricidad", "Iluminación"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_770862-MLA75279565770_032024-F.webp",
         "descripcion": "Detector de humo, fácil instalación"
     },
     {
@@ -527,7 +527,7 @@
         "stock": 70,
         "precio": 50.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_672718-MLU72637290279_112023-F.webp",
         "descripcion": "Termómetro de alta precisión, portátil"
     },
     {
@@ -536,7 +536,7 @@
         "stock": 60,
         "precio": 40.00,
         "categorias": ["Electricidad"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_881982-MLA48415350929_122021-F.webp",
         "descripcion": "Multímetro con pantalla digital"
     },
     {
@@ -545,16 +545,16 @@
         "stock": 200,
         "precio": 15.00,
         "categorias": ["Electricidad", "Iluminación"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_930763-MLU71413565036_092023-F.webp",
         "descripcion": "Linterna LED, resistente al agua"
     },
     {
-        "nombre": "Aspiradora",
+        "nombre": "Aspiradora para auto",
         "id": "1062",
         "stock": 35,
         "precio": 120.00,
         "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_927490-MLU74110426058_012024-F.webp",
         "descripcion": "Aspiradora compacta, alta potencia"
     },
     {
@@ -562,8 +562,8 @@
         "id": "1063",
         "stock": 25,
         "precio": 45.00,
-        "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
+        "categorias": ["Materiales de Construcción", "Jardinería"],
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_745021-MLU77023165511_062024-F.webp",
         "descripcion": "Molde durable, diseños variados"
     },
     {
@@ -572,8 +572,8 @@
         "stock": 80,
         "precio": 18.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Rastrillo de metal, mango ergonómico"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_742283-MLU73204608277_122023-F.webp",
+        "descripcion": "Rastrillo de metal, mango de madera"
     },
     {
         "nombre": "Tijeras de Podar",
@@ -581,8 +581,8 @@
         "stock": 60,
         "precio": 22.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Tijeras afiladas, mango antideslizante"
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_832067-MLU70632558652_072023-F.webp",
+        "descripcion": "Tijeras afiladas"
     },
     {
         "nombre": "Guantes de Jardinería",
@@ -590,7 +590,7 @@
         "stock": 150,
         "precio": 10.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_977932-MLA76044000558_052024-F.webp",
         "descripcion": "Guantes resistentes, varios tamaños"
     },
     {
@@ -599,7 +599,7 @@
         "stock": 25,
         "precio": 95.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_977303-MLU70658813407_072023-F.webp",
         "descripcion": "Cortasetos eléctrico, ligero"
     },
     {
@@ -608,116 +608,8 @@
         "stock": 100,
         "precio": 12.00,
         "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_823325-MLU72698064904_112023-F.webp",
         "descripcion": "Escoba para exteriores, resistente"
-    },
-    {
-        "nombre": "Sopladora de Hojas",
-        "id": "1069",
-        "stock": 30,
-        "precio": 130.00,
-        "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Sopladora ligera, potente motor"
-    },
-    {
-        "nombre": "Motosierra a Batería",
-        "id": "1070",
-        "stock": 20,
-        "precio": 350.00,
-        "categorias": ["Jardinería"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Motosierra sin cables, silenciosa"
-    },
-    {
-        "nombre": "Carretilla Plegable",
-        "id": "1071",
-        "stock": 40,
-        "precio": 65.00,
-        "categorias": ["Materiales de Construcción"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Carretilla compacta, fácil almacenamiento"
-    },
-    {
-        "nombre": "Mezcladora de Pintura",
-        "id": "1072",
-        "stock": 15,
-        "precio": 90.00,
-        "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Mezcladora eléctrica, rápida"
-    },
-    {
-        "nombre": "Lijadora de Banda",
-        "id": "1073",
-        "stock": 30,
-        "precio": 100.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Lijadora potente, acabados finos"
-    },
-    {
-        "nombre": "Pulverizador de Pintura",
-        "id": "1074",
-        "stock": 20,
-        "precio": 180.00,
-        "categorias": ["Pinturas y Accesorios"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Pulverizador preciso, varias boquillas"
-    },
-    {
-        "nombre": "Sierra Sable",
-        "id": "1075",
-        "stock": 25,
-        "precio": 85.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Sierra portátil, cortes en profundidad"
-    },
-    {
-        "nombre": "Detector de Humedad",
-        "id": "1076",
-        "stock": 35,
-        "precio": 45.00,
-        "categorias": ["Electricidad"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Detector digital, precisión garantizada"
-    },
-    {
-        "nombre": "Pulidora Angular",
-        "id": "1077",
-        "stock": 30,
-        "precio": 75.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Pulidora de alta velocidad, segura"
-    },
-    {
-        "nombre": "Amoladora Angular",
-        "id": "1078",
-        "stock": 40,
-        "precio": 85.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Amoladora robusta, motor potente"
-    },
-    {
-        "nombre": "Aspirador de Cenizas",
-        "id": "1079",
-        "stock": 15,
-        "precio": 100.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Aspirador de alta capacidad, filtro HEPA"
-    },
-    {
-        "nombre": "Martillo Rotatorio",
-        "id": "1080",
-        "stock": 25,
-        "precio": 200.00,
-        "categorias": ["Herramientas Eléctricas"],
-        "imagen": "https://via.placeholder.com/100",
-        "descripcion": "Martillo para demolición, alto impacto"
     }
 ]
 

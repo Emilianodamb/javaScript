@@ -215,29 +215,44 @@ p {
 
 /*///////////////////////////*/
 
-.articulo {
-}
 
 .card {
-  display: flex;
-  width: 220px;
-  height: 420px;
-  padding: 0.6em;
+  display: grid;
+  width: 230px;
+  height: 430px;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
   background: #f5f5f5;
   overflow: visible;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  justify-content: space-between;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr 1fr .5fr;
+  grid-template-areas: 
+    "card-img-container"
+    "card-info"
+    "card-footer";
+}
+
+.card-img-container{
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  grid-area: card-img-container;
 }
 
 .card-img {
   width: 100%;
   border-radius: 0.5rem;
   transition: 0.3s ease;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, transparent 100%);
 }
 
 .card-info {
+  grid-area: card-info;
   overflow: scroll;
-  padding-top: 10%;
 }
 
 svg {
@@ -246,7 +261,7 @@ svg {
 }
 
 .card-footer {
-  justify-self: flex-end;
+  grid-area: card-footer;
   background-color: #f5f5f5;
   width: 100%;
   display: flex;

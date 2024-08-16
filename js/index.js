@@ -72,7 +72,7 @@ const renderProducts = (arrayArticulos) => {
     productCard.className = "articulo";
     productCard.innerHTML = ` 
         <div class="card">
-          <img src="${articulo.imagen}" class="card-img"/>
+          <div class="card-img-container"><img src="${articulo.imagen}" class="card-img"/></div>
           <div class="card-info">
             <h4 class="text-title">${articulo.nombre}</h4>
             <p class="text-body">${articulo.descripcion}</p>
