@@ -26,7 +26,7 @@ const categorias = [
 let inventario = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-  let getInventario = fetch("./inventario.json")
+  let getInventario = fetch("../inventario.json")
   getInventario
     .then((res) => res.json())
     .then((res) => {
