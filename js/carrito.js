@@ -22,7 +22,7 @@ const renderProducts = (arrayArticulos) => {
                     <img src="${articulo.imagen}" class="card-img-carrito"/>
                 </div>
                 <div class="card-info-carrito">
-                    <p class="text-body">Product description and details</p>
+                    <p class="text-body">${articulo.descripcion}</p>
                     <p>ID: ${articulo.id}</p>
                     <p>Stock: ${articulo.stock}</p>
                 </div>
